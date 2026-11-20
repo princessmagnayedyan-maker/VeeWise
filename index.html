@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VeeWise | Online Safety Awareness</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header>
+    <a class="logo" href="#home" aria-label="VeeWise Home">
+        <img src="logo.png" alt="VeeWise logo">
+    </a>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#awareness">Awareness</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#tester">Scam Tester</a>
+        <a href="#tips">Tips</a>
+        <a href="#help">Help</a>
+    </nav>
+
+    <a href="#awareness" class="button">Get Started</a>
+</header>
+
+<!-- HOME PAGE -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="cyan">MAKE HABITUAL SECURITY A PRACTICE</p>
+        <h1>
+            Spot the Scam.<br>
+            <span class="cyan">Protect Your</span><br>
+            Digital Future.
+        </h1>
+        <p>
+            Learn how to recognize suspicious messages,
+            avoid online fraud, and make safer decisions
+            whenever you go online.
+        </p>
+        <a href="#awareness" class="button">Explore Safety Guide →</a>
+        <a href="#quiz" class="button">Take the Quiz</a>
+    </div>
+    <div class="hero-logo">
+        <img src="logo.png" alt="VeeWise">
+    </div>
+</section>
+
+<!-- SCAM AWARENESS -->
+<section class="dark-section" id="awareness">
+    <div class="section-title">
+        <h2>Common Types of <span class="cyan">Online Scams</span></h2>
+        <p>Learn about different online threats and their warning signs.</p>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <div class="icon">✉️</div>
+            <h3>Phishing Messages</h3>
+            <p>Deceptive messages pretending to come from trusted organizations to obtain personal or financial information.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🛍️</div>
+            <h3>Fake Online Shops</h3>
+            <p>Fraudulent online stores that advertise products but may not deliver the purchased items.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💼</div>
+            <h3>Fraudulent Job Offers</h3>
+            <p>Fake employment opportunities that may ask applicants for suspicious payments or sensitive personal information.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📦</div>
+            <h3>Fake Delivery Alerts</h3>
+            <p>False delivery notifications that encourage users to open unfamiliar links or make unexpected payments.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">👤</div>
+            <h3>Impersonation Scams</h3>
+            <p>Scammers pretending to be relatives, friends, companies, or government agencies.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💳</div>
+            <h3>Payment Scams</h3>
+            <p>Fraud involving false payment confirmations or suspicious requests for money transfers.</p>
+        </div>
+    </div>
+</section>
+
+<!-- INTERACTIVE QUIZ -->
+<section id="quiz">
+    <div class="section-title">
+        <h2>Real or <span class="cyan">Fake?</span></h2>
+        <p>Test your knowledge about online scams!</p>
+    </div>
+
+    <div class="quiz-box">
+        <p id="questionNumber">Question 1 of 5</p>
+        <h3 id="question">Loading question...</h3>
+        <div id="answers"></div>
+        <p id="feedback" class="feedback"></p>
+
+        <button id="nextButton" onclick="nextQuestion()" disabled>
+            Next Question →
+        </button>
+
+        <button onclick="restartQuiz()">Restart Quiz</button>
+        <h3 id="score"></h3>
+    </div>
+</section>
+
+<!-- SCAM TESTER -->
+<section class="dark-section" id="tester">
+    <div class="section-title">
+        <h2>Message <span class="cyan">Scam Tester</span></h2>
+        <p>Check a message for possible warning signs.</p>
+    </div>
+
+    <div class="tester-box">
+        <label for="message">Paste your suspicious message:</label>
+        <textarea id="message" rows="6" placeholder="Paste the message text here..."></textarea>
+
+        <button onclick="checkMessage()">Check for Warning Signs</button>
+        <button onclick="clearMessage()">Clear</button>
+
+        <div id="result" class="feedback">
+            <p>Your message will be checked for common warning signs using simple keyword detection.</p>
+        </div>
+
+        <p class="small-note">
+            This tool cannot confirm whether a message is a scam.
+            It does not verify links or identify senders.
+            Your text is processed locally in your browser.
+        </p>
+    </div>
+</section>
+
+<!-- SAFETY TIPS -->
+<section id="tips">
+    <div class="section-title">
+        <h2>Online <span class="cyan">Safety Tips</span></h2>
+        <p>Practice these habits to protect yourself online.</p>
+    </div>
+
+    <div class="tips">
+        <div class="tip">
+            <h3>01. Think Before You Click</h3>
+            <p>Avoid clicking unfamiliar links from unexpected messages.</p>
+        </div>
+
+        <div class="tip">
+            <h3>02. Protect Your Passwords</h3>
+            <p>Never share your passwords, OTPs, or verification codes.</p>
+        </div>
+
+        <div class="tip">
+            <h3>03. Verify Information</h3>
+            <p>Check whether the sender or organization is legitimate through official channels.</p>
+        </div>
+
+        <div class="tip">
+            <h3>04. Be Careful with Online Payments</h3>
+            <p>Review the seller and verify payments through your official payment application.</p>
+        </div>
+
+        <div class="tip">
+            <h3>05. Avoid Rushed Decisions</h3>
+            <p>Be cautious of messages that threaten you or pressure you to act immediately.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="dark-section" id="faq">
+    <div class="section-title">
+        <h2>Frequently Asked <span class="cyan">Questions</span></h2>
+    </div>
+
+    <details>
+        <summary>What is VeeWise?</summary>
+        <p>VeeWise is an educational website designed to help internet users recognize online scams and practice safer online habits.</p>
+    </details>
+
+    <details>
+        <summary>Can the Scam Tester confirm a scam?</summary>
+        <p>No. It only identifies possible warning signs using basic keyword detection. It cannot guarantee that a message is fraudulent or safe.</p>
+    </details>
+
+    <details>
+        <summary>What should I do if I receive a suspicious message?</summary>
+        <p>Avoid clicking unfamiliar links or sharing personal information. Verify the sender through official communication channels.</p>
+    </details>
+
+    <details>
+        <summary>Does VeeWise collect my personal information?</summary>
+        <p>This version does not collect or transmit information entered into the Scam Tester.</p>
+    </details>
+</section>
+
+<!-- HELP -->
+<section id="help">
+    <div class="section-title">
+        <h2>Where to Get <span class="cyan">Help</span></h2>
+        <p>Visit official government websites for information and assistance.</p>
+    </div>
+
+    <a class="help-link" href="https://www.bsp.gov.ph/" target="_blank" rel="noopener noreferrer">
+        Bangko Sentral ng Pilipinas (BSP) ↗
+    </a>
+
+    <a class="help-link" href="https://dict.gov.ph/" target="_blank" rel="noopener noreferrer">
+        Department of Information and Communications Technology (DICT) ↗
+    </a>
+
+    <a class="help-link" href="https://nbi.gov.ph/" target="_blank" rel="noopener noreferrer">
+        National Bureau of Investigation (NBI) ↗
+    </a>
+
+    <p class="small-note" style="text-align:center">
+        Visit the agencies' official websites for current reporting instructions and contact details.
+    </p>
+</section>
+
+<!-- FEEDBACK / STAR RATING -->
+<section class="dark-section" id="feedback">
+    <div class="section-title">
+        <h2>Rate Your <span class="cyan">Experience</span></h2>
+        <p>How helpful was VeeWise in improving your online safety awareness?</p>
+    </div>
+
+    <div class="tester-box rating-box">
+        <h3>Give us a rating!</h3>
+
+        <div class="star-rating" id="starRating">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        </div>
+
+        <p id="ratingText">Select a star from 1 to 5.</p>
+
+        <button id="submitRating" disabled>Submit Rating</button>
+
+        <p id="ratingMessage" class="feedback"></p>
+    </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
